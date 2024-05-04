@@ -1,32 +1,20 @@
-import React, {useState} from 'react';
+import './App.css';
 import { AppBar } from './pages/AppBar/AppBar';
+import { HomePage } from './pages/HomePage/HomePage';
 import { Login }  from './pages/Login/Login';
-import './App.css'
-
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import "@fontsource/roboto";
 
 export default function App() {
-  
-  const [user, setUser] = useState(null);
-
-  const handleLogin = (userName) => {
-    setUser(userName);
-  }
-
-  
   return (
-    <div>
-      <AppBar/>
-      { user && (
-      <div>
-        <p>Logado</p>
-      </div>
-      )} {!user &&(
-        <div>
-          <Login onLogin={handleLogin}/>
-        </div>
-      )}
-    </div>
-    
-  )
+    <BrowserRouter>
+      <AppBar />
+      <main>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/login' element={<Login/>}/>
+        </Routes>
+      </main>
+    </BrowserRouter>
+  );
 }

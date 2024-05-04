@@ -1,24 +1,25 @@
 import styles from "./AppBar.module.css";
 import { MdMenu} from "react-icons/md";
+import {Link} from 'react-router-dom';
 
 export function AppBar(){
   return (
-    <header className={styles['app-bar']}>
-      <InfnetLogo/>
-      <LinksCabecalho/>
-      <Contacts/>
-    </header>
+      <header className={styles['app-bar']}>
+        <InfnetLogo/>
+        <LinksCabecalho/>
+        <Contacts/>
+      </header>
   )
 }
 
 function InfnetLogo(){
   return (
-    <div className={styles['infnet-logo']}>
+    <Link to='/' className={styles['infnet-logo']}>
       <img src='infnet.png' className={styles['infnet-logo-imagem']}/>
       <span>
         Infnet Forum Frenzy
       </span>
-    </div>
+    </Link>
   ) 
 }
 
@@ -26,9 +27,9 @@ function InfnetLogo(){
 function Contacts(){
   return(
     <div className={styles['contatos']}>
-      <span>
+      <Link to='/login'>
         Login
-      </span>
+      </Link>
       <span>
        <img src='git-logo.png' className={styles['git-logo']}/>
       </span>
