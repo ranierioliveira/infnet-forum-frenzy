@@ -13,16 +13,8 @@ export function AppBar(){
 
 function InfnetLogo(){
   return (
-    <div style={{
-      display: 'flex', 
-      justifyContent: 'center',
-      alignItems: 'center',
-      gap: '12px'
-    }}>
-      <img src='infnet.png' style={{
-        width: '36px',
-        height: '36px'
-      }}/>
+    <div className={styles['infnet-logo']}>
+      <img src='infnet.png' className={styles['infnet-logo-imagem']}/>
       <span>
         Infnet Forum Frenzy
       </span>
@@ -33,27 +25,15 @@ function InfnetLogo(){
 
 function Contacts(){
   return(
-    <div style={{
-      display: 'flex',
-      justifyContent: 'end', 
-      gap: '24px',
-      flexGrow: '1',
-    }}>
+    <div className={styles['contatos']}>
       <span>
         Login
       </span>
       <span>
-       <img src='git-logo.png' style={{
-        borderRadius: '50%',
-        width: '24px',
-        height: '24px'
-       }}/>
+       <img src='git-logo.png' className={styles['git-logo']}/>
       </span>
       <span >
-        <MdMenu style={{
-          width: '24px',
-          height: '24px',
-        }} />
+        <MdMenu className={styles['md-menu']} />
       </span>
     </div>
   )
