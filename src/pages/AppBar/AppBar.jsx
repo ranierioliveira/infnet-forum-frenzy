@@ -43,12 +43,12 @@ function Contacts(){
 function LinksCabecalho(){
   return(
     <div className={styles['links-cabecalho']}>
-      <span>
-        ACESSAR BLOG
-      </span>
-      <span>
-        REALIZAR CONTATO
-      </span>
+      <Link to='/meu-perfil'>
+        MEU PERFIL
+      </Link>
+      <Link to='/ranking'>
+        RANKING
+      </Link>
     </div>
   )
 }

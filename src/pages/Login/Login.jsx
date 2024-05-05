@@ -20,8 +20,8 @@ export function Login({ onLogin }){
         <h1 className={styles['login-titulo']}>Login</h1>
         <p>Digite seus dados de acesso no campo abaixo:</p>
         <div className={styles['campo-info']}>
-          <div><label>Email</label></div>
-          <input className={`${styles['input']} rounded-md border-gray-300`} type='text' placeholder='Digite seu e-mail' onChange={e => setUserName(e.target.value)}/>
+          <div><label>User</label></div>
+          <input className={`${styles['input']} rounded-md border-gray-300`} type='text' placeholder='Digite seu usuário' onChange={e => setUserName(e.target.value)}/>
         </div>
         <div className={styles['campo-info']}>
           <div><label>Senha</label></div>
