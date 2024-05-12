@@ -1,14 +1,7 @@
-import React, { useState } from 'react';
-import {Login} from '../Login/Login';
 import {Link} from 'react-router-dom';
 
-export function HomePage() {
-
-  const [user, setUser] = useState(null);
-
-  const handleLogin = (username) => {
-    setUser(username);
-  }
+// eslint-disable-next-line react/prop-types
+export function HomePage( { user } ) {
 
 
   return (
@@ -23,7 +16,6 @@ export function HomePage() {
           <li>Tópico 5</li>
         </ul>
         <Link to='/login'>Faça login para acessar mais tópicos</Link>
-        <Login onLogin={handleLogin}/>
         </div>
         
       ) : (

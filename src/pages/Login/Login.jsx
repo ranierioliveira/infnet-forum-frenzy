@@ -1,16 +1,20 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
+import { useNavigate } from 'react-router-dom'
 import styles from './Login.module.css';
 
+// eslint-disable-next-line react/prop-types
 export function Login({ onLogin }){
   
   const [userName, setUserName] = useState(null);
   const [password, setPassword] = useState(null);
+  const navigate = useNavigate(); //instância p/ o navigate
   
 
   const handleLogin = (e) =>{
     e.preventDefault();
     if(userName && password){
       onLogin(userName);
+      navigate('/')
     }
   }
 
