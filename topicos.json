@@ -1,0 +1,185 @@
+{
+    "topicos": {
+      "topico1": {
+        "titulo": "Tecnologias emergentes em 2024",
+        "descricao": "Discussão sobre as tecnologias emergentes mais promissoras para o ano de 2024.",
+        "dataPublicacao": "2024-01-01",
+        "nomeUsuario": "joaosilva",
+        "palavrasChave": "tecnologia, inovação, 2024",
+        "curtidas": "150",
+        "descurtidas": "5"
+      },
+      "topico2": {
+        "titulo": "Inteligência Artificial e o Futuro do Trabalho",
+        "descricao": "Como a IA está moldando o futuro do trabalho e as profissões.",
+        "dataPublicacao": "2024-01-02",
+        "nomeUsuario": "mariasantos",
+        "palavrasChave": "IA, trabalho, futuro",
+        "curtidas": "200",
+        "descurtidas": "12"
+      },
+      "topico3": {
+        "titulo": "Desafios da Cibersegurança",
+        "descricao": "Quais são os maiores desafios em cibersegurança atualmente?",
+        "dataPublicacao": "2024-01-03",
+        "nomeUsuario": "carlosrocha",
+        "palavrasChave": "cibersegurança, desafios, segurança",
+        "curtidas": "170",
+        "descurtidas": "8"
+      },
+      "topico4": {
+        "titulo": "Desenvolvimento Web: Melhores Práticas",
+        "descricao": "Compartilhe as melhores práticas para o desenvolvimento web em 2024.",
+        "dataPublicacao": "2024-01-04",
+        "nomeUsuario": "analuiza",
+        "palavrasChave": "desenvolvimento web, práticas, dicas",
+        "curtidas": "130",
+        "descurtidas": "10"
+      },
+      "topico5": {
+        "titulo": "Carreiras em Tecnologia",
+        "descricao": "Discussão sobre as diversas carreiras e oportunidades no setor de tecnologia.",
+        "dataPublicacao": "2024-01-05",
+        "nomeUsuario": "pedrogomes",
+        "palavrasChave": "carreira, tecnologia, oportunidades",
+        "curtidas": "145",
+        "descurtidas": "6"
+      },
+      "topico6": {
+        "titulo": "Desenvolvimento de Jogos",
+        "descricao": "Quais são as tendências no desenvolvimento de jogos para 2024?",
+        "dataPublicacao": "2024-01-06",
+        "nomeUsuario": "luizafreitas",
+        "palavrasChave": "jogos, desenvolvimento, tendências",
+        "curtidas": "185",
+        "descurtidas": "15"
+      },
+      "topico7": {
+        "titulo": "Blockchain e Criptomoedas",
+        "descricao": "Como o blockchain e as criptomoedas estão evoluindo em 2024.",
+        "dataPublicacao": "2024-01-07",
+        "nomeUsuario": "marcosalmeida",
+        "palavrasChave": "blockchain, criptomoedas, finanças",
+        "curtidas": "160",
+        "descurtidas": "7"
+      },
+      "topico8": {
+        "titulo": "Realidade Aumentada e Virtual",
+        "descricao": "Explorando as aplicações de realidade aumentada e virtual em diferentes setores.",
+        "dataPublicacao": "2024-01-08",
+        "nomeUsuario": "carolinapereira",
+        "palavrasChave": "realidade aumentada, virtual, tecnologia",
+        "curtidas": "140",
+        "descurtidas": "5"
+      },
+      "topico9": {
+        "titulo": "Internet das Coisas (IoT)",
+        "descricao": "O impacto da Internet das Coisas nas nossas vidas diárias.",
+        "dataPublicacao": "2024-01-09",
+        "nomeUsuario": "rodrigomelo",
+        "palavrasChave": "IoT, internet das coisas, tecnologia",
+        "curtidas": "175",
+        "descurtidas": "9"
+      },
+      "topico10": {
+        "titulo": "Automação e Robótica",
+        "descricao": "Como a automação e a robótica estão transformando a indústria.",
+        "dataPublicacao": "2024-01-10",
+        "nomeUsuario": "fernandasilva",
+        "palavrasChave": "automação, robótica, indústria",
+        "curtidas": "155",
+        "descurtidas": "4"
+      },
+      "topico11": {
+        "titulo": "Desenvolvimento Mobile",
+        "descricao": "Dicas e truques para o desenvolvimento de aplicativos móveis.",
+        "dataPublicacao": "2024-01-11",
+        "nomeUsuario": "leonardomartins",
+        "palavrasChave": "desenvolvimento mobile, aplicativos, dicas",
+        "curtidas": "190",
+        "descurtidas": "12"
+      },
+      "topico12": {
+        "titulo": "Tecnologias Sustentáveis",
+        "descricao": "A importância das tecnologias sustentáveis para o futuro do planeta.",
+        "dataPublicacao": "2024-01-12",
+        "nomeUsuario": "gabrielagomes",
+        "palavrasChave": "sustentabilidade, tecnologia, futuro",
+        "curtidas": "160",
+        "descurtidas": "10"
+      },
+      "topico13": {
+        "titulo": "Educação e Tecnologia",
+        "descricao": "Como a tecnologia está revolucionando a educação.",
+        "dataPublicacao": "2024-01-13",
+        "nomeUsuario": "lucasfernandes",
+        "palavrasChave": "educação, tecnologia, inovação",
+        "curtidas": "175",
+        "descurtidas": "6"
+      },
+      "topico14": {
+        "titulo": "Desenvolvimento Ágil",
+        "descricao": "Benefícios e desafios do desenvolvimento ágil em projetos de software.",
+        "dataPublicacao": "2024-01-14",
+        "nomeUsuario": "marianasoares",
+        "palavrasChave": "desenvolvimento ágil, software, metodologia",
+        "curtidas": "140",
+        "descurtidas": "8"
+      },
+      "topico15": {
+        "titulo": "Big Data e Análise de Dados",
+        "descricao": "Explorando o papel do Big Data e da análise de dados nas empresas.",
+        "dataPublicacao": "2024-01-15",
+        "nomeUsuario": "eduardocosta",
+        "palavrasChave": "big data, análise de dados, empresas",
+        "curtidas": "165",
+        "descurtidas": "7"
+      },
+      "topico16": {
+        "titulo": "Ciência de Dados",
+        "descricao": "A carreira em ciência de dados e suas oportunidades.",
+        "dataPublicacao": "2024-01-16",
+        "nomeUsuario": "alinealmeida",
+        "palavrasChave": "ciência de dados, carreira, oportunidades",
+        "curtidas": "180",
+        "descurtidas": "5"
+      },
+      "topico17": {
+        "titulo": "Desenvolvimento de Software Open Source",
+        "descricao": "Vantagens e desvantagens de contribuir para projetos de software open source.",
+        "dataPublicacao": "2024-01-17",
+        "nomeUsuario": "thiagomonteiro",
+        "palavrasChave": "open source, software, contribuição",
+        "curtidas": "150",
+        "descurtidas": "6"
+      },
+      "topico18": {
+        "titulo": "Marketing Digital",
+        "descricao": "Estratégias eficazes de marketing digital para 2024.",
+        "dataPublicacao": "2024-01-18",
+        "nomeUsuario": "barbaralima",
+        "palavrasChave": "marketing digital, estratégias, 2024",
+        "curtidas": "170",
+        "descurtidas": "9"
+      },
+      "topico19": {
+        "titulo": "Design UX/UI",
+        "descricao": "As melhores práticas de design UX/UI para criar experiências incríveis.",
+        "dataPublicacao": "2024-01-19",
+        "nomeUsuario": "renatoribeiro",
+        "palavrasChave": "design, UX, UI, experiência",
+        "curtidas": "160",
+        "descurtidas": "4"
+      },
+      "topico20": {
+        "titulo": "Metaverso",
+        "descricao": "O que é o metaverso e como ele está transformando a interação digital.",
+        "dataPublicacao": "2024-01-20",
+        "nomeUsuario": "patriciacastro",
+        "palavrasChave": "metaverso, interação digital, futuro",
+        "curtidas": "175",
+        "descurtidas": "8"
+      }
+    }
+  }
+  

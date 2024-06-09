@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom';
+import PostListPage from '../../components/PostListPage';
 
 // eslint-disable-next-line react/prop-types
 export function HomePage( { user } ) {
@@ -8,13 +9,7 @@ export function HomePage( { user } ) {
     <div>
       {!user ? (
         <div>
-          <ul>
-          <li>Tópico 1</li>
-          <li>Tópico 2</li>
-          <li>Tópico 3</li>
-          <li>Tópico 4</li>
-          <li>Tópico 5</li>
-        </ul>
+          <PostListPage/>
         <Link to='/login'>Faça login para acessar mais tópicos</Link>
         </div>
         
