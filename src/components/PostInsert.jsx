@@ -41,6 +41,7 @@ export default function PostInsert({ user, onNewTopic }) {
         body: JSON.stringify(topico),
       });
       setMessage("Salvo com sucesso!");
+      //Atualiza a requisição após adicionar um novo tópico
       if (onNewTopic) onNewTopic();
     } catch (error) {
       setMessage(error.message);
