@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function PostInsert({ user }) {
+export default function PostInsert({ user, onNewTopic }) {
   const baseUrl = "https://infnet-forum-frenzy-default-rtdb.asia-southeast1.firebasedatabase.app";
 
   const [isLoading, setLoading] = useState(false);
@@ -29,20 +29,19 @@ export default function PostInsert({ user }) {
         dataPublicacao: formattedDate
       };
 
-      // Fetch existing topics to determine the next index
       const response = await fetch(`${baseUrl}/topicos.json`);
       const data = await response.json();
       const existingKeys = data ? Object.keys(data) : [];
       const nextIndex = existingKeys.length + 1;
       const newTopicKey = `topico${nextIndex}`;
 
-      // Save the new topic with the new key
       await fetch(`${baseUrl}/topicos/${newTopicKey}.json`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(topico),
       });
       setMessage("Salvo com sucesso!");
+      if (onNewTopic) onNewTopic();
     } catch (error) {
       setMessage(error.message);
     } finally {
