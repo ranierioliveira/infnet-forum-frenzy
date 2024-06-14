@@ -67,6 +67,7 @@ export default function PostInsert({ user, onNewTopic }) {
             id="titulo"
             value={titulo}
             onChange={(e) => setTitulo(e.target.value)}
+            style={{border: "1px solid black"}}
           />
         </div>
         <div>
@@ -75,6 +76,7 @@ export default function PostInsert({ user, onNewTopic }) {
             id="descricao"
             value={descricao}
             onChange={(e) => setDescricao(e.target.value)}
+            style={{border: "1px solid black"}}
           />
         </div>
         <div>
@@ -83,6 +85,7 @@ export default function PostInsert({ user, onNewTopic }) {
             id="palavrasChave"
             value={palavrasChave}
             onChange={(e) => setPalavrasChave(e.target.value)}
+            style={{border: "1px solid black"}}
           />
         </div>
         <button
