@@ -27,7 +27,7 @@ function InfnetLogo(){
 function Contacts(){
   return(
     <div className={styles['contatos']}>
-      <Link to='/login'>
+      <Link data-cy="login" to='/login'>
         Login
       </Link>
       <span>

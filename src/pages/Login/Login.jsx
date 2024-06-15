@@ -14,7 +14,7 @@ export function Login({ onLogin }){
     e.preventDefault();
     if(userName && password){
       onLogin(userName);
-      navigate('/')
+      navigate('/logged')
     }
   }
 
@@ -25,15 +25,15 @@ export function Login({ onLogin }){
         <p>Digite seus dados de acesso no campo abaixo:</p>
         <div className={styles['campo-info']}>
           <div><label>User</label></div>
-          <input className={`${styles['input']} rounded-md border-gray-300`} type='text' placeholder='Digite seu usuário' onChange={e => setUserName(e.target.value)}/>
+          <input className={`${styles['input']} rounded-md border-gray-300`} type='text' placeholder='Digite seu usuário' data-cy='username' onChange={e => setUserName(e.target.value)}/>
         </div>
         <div className={styles['campo-info']}>
           <div><label>Senha</label></div>
 
-          <input className={`${styles['input']} rounded-md border-gray-300`} placeholder='Digite sua senha' type='password' onChange={e => setPassword(e.target.value)}/>
+          <input className={`${styles['input']} rounded-md border-gray-300`} placeholder='Digite sua senha' type='password' data-cy='password' onChange={e => setPassword(e.target.value)}/>
         </div>
         <span className={styles['recuperacao-senha']}>Esqueci minha senha</span>
-        <button className={styles['botao-contato']} type="submit">Login</button>
+        <button className={styles['botao-contato']} type="submit" data-cy='submit'>Login</button>
       </form>
     </div>
     

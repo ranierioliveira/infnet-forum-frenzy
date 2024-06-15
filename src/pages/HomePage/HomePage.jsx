@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import PostListPage from '../../components/PostListPage';
 import PostInsert from '../../components/PostInsert';
+import LoggedPage from '../LoggedPage/LoggedPage';
 import { useState } from 'react';
 
 export function HomePage({ user }) {
@@ -20,11 +21,7 @@ export function HomePage({ user }) {
           <Link to='/login' style={{ textDecoration: "underline" }}>Faça login para acessar mais tópicos</Link>
         </div>
       ) : (
-        <div>
-          <h1>Bem vindo(a) {user}!</h1>
-          <PostInsert user={user} onNewTopic={handleNewTopic} />
-          <PostListPage key={updateKey}/>
-        </div>
+        <LoggedPage user={user} onNewTopic={handleNewTopic} key={updateKey}/>
       )}
     </div>
   );

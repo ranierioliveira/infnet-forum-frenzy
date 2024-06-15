@@ -7,6 +7,7 @@ import { Ranking  } from './pages/Ranking/Ranking';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import { useState } from 'react';
 import "@fontsource/roboto";
+import LoggedPage from './pages/LoggedPage/LoggedPage';
 
 export default function App() {
 
@@ -25,6 +26,7 @@ export default function App() {
           <Route path='/login' element={<Login onLogin={handleLogin} />}/>
           <Route path='/meu-perfil' element={<MyProfile/>}/>
           <Route path='/ranking' element={<Ranking/>}/>
+          <Route path='/logged' element={<LoggedPage user={user}/>}/>
         </Routes>
       </main>
     </BrowserRouter>
