@@ -1,0 +1,22 @@
+.container{
+    background-color: #b0c4de ;
+}
+
+.title{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media(min-width: 600px){
+    .title{
+        font-size: 1.5rem;
+    }
+  }
+
+  @media(min-width: 900px){
+    .title{
+        font-size: 2rem;
+    
+    }
+  }

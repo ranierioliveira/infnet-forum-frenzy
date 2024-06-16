@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import styles from './PostInsert.module.css';
 
 export default function PostInsert({ user, onNewTopic }) {
   const baseUrl = "https://infnet-forum-frenzy-default-rtdb.asia-southeast1.firebasedatabase.app";
@@ -54,43 +55,43 @@ export default function PostInsert({ user, onNewTopic }) {
   };
 
   return (
-    <div style={styles.container}>
-      <h1 style={styles.title}>Novo Tópico</h1>
+    <div className={styles['container']}>
+      <h1 className={styles['title']}>Novo Tópico</h1>
       <section>
         {message && <p>{message}</p>}
         {isLoading && <p>Carregando...</p>}
       </section>
-      <section>
+      <section >
         <div>
-          <label htmlFor="titulo">Título: </label>
           <input
             id="titulo"
             value={titulo}
             onChange={(e) => setTitulo(e.target.value)}
-            style={{border: "1px solid black"}}
+            placeholder='Insira o título'
+            className={styles['input-topico']}
           />
         </div>
         <div>
-          <label htmlFor="descricao">Descrição: </label>
           <input
             id="descricao"
             value={descricao}
             onChange={(e) => setDescricao(e.target.value)}
-            style={{border: "1px solid black"}}
+            placeholder='Insira a descrição'
+            className={styles['input-topico']}
           />
         </div>
         <div>
-          <label htmlFor="palavrasChave">Palavras-chave: </label>
           <input
             id="palavrasChave"
             value={palavrasChave}
             onChange={(e) => setPalavrasChave(e.target.value)}
-            style={{border: "1px solid black"}}
+            placeholder='Palavras-chave'
+            className={styles['input-topico']}
           />
         </div>
         <button
           onClick={saveTopic}
-          style={styles.button}
+          className={styles['botao']}
         >
           Salvar
         </button>
@@ -99,22 +100,3 @@ export default function PostInsert({ user, onNewTopic }) {
   );
 }
 
-const styles = {
-  container: {
-    border: "1px solid black",
-    maxWidth: "800px",
-    margin: "auto",
-    padding: "8px",
-  },
-  title: {
-    fontWeight: "bold",
-    fontSize: "1.2rem"
-  },
-  button: {
-    backgroundColor: "blue",
-    color: "white",
-    padding: "8px",
-    borderRadius: "4px",
-    border: "none"
-  }
-};

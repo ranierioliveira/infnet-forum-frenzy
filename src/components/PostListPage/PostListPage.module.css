@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #b0c4de ;
+    height: calc(100vh - 64px);
+    gap: 8px;
+}
+
+.link-login{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.title{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+
+@media(min-width: 600px){
+    .title{
+        font-size: 1.5rem;
+    }
+    .link-login{
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+    .link-login:hover{
+        text-decoration: underline;
+    }
+  }
+
+  @media(min-width: 900px){
+    .title{
+        font-size: 2rem;
+    
+    }
+    .link-login{
+        font-size: 1.5rem;
+    }
+  }

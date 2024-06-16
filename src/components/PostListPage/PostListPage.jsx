@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
-import PostList from './PostList';
+import PostList from '../PostList';
+import styles from './PostListPage.module.css';
+import { Link } from 'react-router-dom';
 
 export default function PostListPage({ action }) {
   const [topicos, setTopicos] = useState(null);
@@ -34,10 +36,20 @@ export default function PostListPage({ action }) {
   }, [action]);
 
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
+    <div className={styles['container']}>
       {isLoading && <p>Carregando...</p>}
+
       {message && <p>{message}</p>}
-      {topicos && <PostList topicos={topicos} />}
+
+      {topicos && (
+        <div>
+          {action && <h1 className={styles['title']}>Tópicos em destaque</h1>}
+          <PostList topicos={topicos} />
+        </div>
+      )}
+
+      <Link to='/login' className={styles['link-login']} >Faça login para acessar mais tópicos</Link>
+
     </div>
   );
 }
