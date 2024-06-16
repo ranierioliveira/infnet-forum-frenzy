@@ -1,4 +1,4 @@
-import PostCard from './PostCard';
+import PostCard from './PostCard/PostCard';
 
 export default function PostList({ topicos }) {
     return (

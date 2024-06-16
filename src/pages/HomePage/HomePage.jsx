@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import PostListPage from '../../components/PostListPage';
-import PostInsert from '../../components/PostInsert';
+// import PostInsert from '../../components/PostInsert';
 import LoggedPage from '../LoggedPage/LoggedPage';
 import { useState } from 'react';
 
