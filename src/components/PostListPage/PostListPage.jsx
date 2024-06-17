@@ -48,7 +48,8 @@ export default function PostListPage({ action }) {
         </div>
       )}
 
-      <Link to='/login' className={styles['link-login']} >Faça login para acessar mais tópicos</Link>
+      
+      {action && <Link to='/login' className={styles['link-login']} >Faça login para acessar mais tópicos</Link>}
 
     </div>
   );
